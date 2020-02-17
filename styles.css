@@ -1,0 +1,148 @@
+
+/*------------------------------------------------*/
+/* BASIC SETUP */
+/*------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*------------------------------------------------*/
+
+
+section {
+    padding: 10px 0;
+}
+
+pre {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: monospace;
+    padding: 10px 3px;
+    font-size: 0.6em;
+    margin: 10px;
+    line-height: 1.6em;
+}
+
+
+
+/*------------------------------------------------*/
+/* NAV BAR */
+/*------------------------------------------------*/
+
+
+nav {
+
+    width: 300px;
+    border: 3px solid #888;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+nav li {
+
+    border-top: 1px solid #666;
+    border-collapse: collapse;
+    padding: 7% 3%;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #555;
+}
+
+
+
+/*------------------------------------------------*/
+/* Main content */
+/*------------------------------------------------*/
+
+
+main {
+    margin-left: 300px;
+    padding: 3%;
+}
+
+main p, main li {
+    padding: 0.5%;
+    line-height: 115%;
+    font-size: 0.8em;
+}
+
+main p {
+    margin: 10px;
+}
+
+main li {
+    margin: 10px 0px 0px 25px;
+    
+}
+
+main li li {
+    font-size: inherit;
+ 
+}
+
+
+
+
+/*------------------------------------------------*/
+/* QUERY */
+/*------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+    nav {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-height: 300px;
+        text-align: center;
+    }
+    
+    nav li {
+        padding: 1%;
+        position: relative;
+    }
+    
+    nav ul {
+        height: 200px;
+    }
+    
+    nav a {
+        display: block;
+    }
+    
+    main {
+        margin: 0;
+    }
+}
+
+
+
